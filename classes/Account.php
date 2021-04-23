@@ -80,7 +80,7 @@ class Account
 
 	function updateAccount($student_id, $amount)
 	{
-		$sql = "update  account set amount = amount - '$amount' where student_id = '$student_id' ";
+		$sql = "update  account set amount = amount + '$amount' where student_id = '$student_id' ";
 		$this->db->executeNonQuery($sql);
 		if($this->db->getEffectedRows()	 == 0)
 		{
