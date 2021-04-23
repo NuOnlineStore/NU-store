@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/title_home" />
+
+
+        <item
+            android:id="@+id/categories"
+            android:icon="@drawable/list"
+            android:title="@string/categories" />
+
+        <item
+            android:id="@+id/my_cart"
+            android:icon="@drawable/list"
+            android:title="@string/my_cart" />
+
+
+
+        <item
+            android:id="@+id/my_order"
+            android:icon="@drawable/list"
+            android:title="@string/my_orders" />
+
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/list"
+            android:title="@string/my_account"/>
+
+
+        <item
+            android:id="@+id/change_lang"
+            android:icon="@drawable/list"
+            android:title="@string/change_lang"/>
+
+
+
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+            android:id="@+id/student_profile"
+            android:icon="@drawable/account"
+            android:title="@string/edit_profile" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

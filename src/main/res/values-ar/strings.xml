@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">shopping</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NU Shopping</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name = "action_settings"> الإعدادات </string>
+
+    <string name = "login_lbl"> تسجيل الدخول </string>
+    <string name = "email_hint"> البريد الإلكتروني </string>
+    <string name = "pass_hint"> كلمة المرور </string>
+    <string name = "login_btn"> تسجيل الدخول </string>
+
+    <string name = "register_act_lbl"> تسجيل حساب </string>
+
+    <string name = "new_user_lbl"> تسجيل حساب جديد </string>
+    <string name = "new_user_acc_lbl"> مستخدم جديد؟ </string>
+    <string name = "create_account"> إنشاء حساب جديد </string>
+    <string name = "name_hint"> اسم المستخدم </string>
+    <string name = "password_hint"> كلمة المرور </string>
+    <string name = "re_password_hint"> تأكيد كلمة المرور </string>
+    <string name = "reg_submit"> تسجيل </string>
+    <string name = "msg_failed"> توجد مشكلة في الاتصال بالشبكة </string>
+    <string name = "username_pass_empty"> يجب إدخال اسم المستخدم وكلمة المرور </string>
+    <string name = "login_failed"> فشل تسجيل الدخول ... </string>
+    <string name = "login_act_lbl"> تسجيل الدخول </string>
+    <string name = "register_success"> تم تسجيل حسابك </string>
+    <string name = "register_process"> عملية التسجيل ... </string>
+    <string name = "username_pass_wrong"> كلمة المرور أو اسم المستخدم خاطئ </string>
+    <string name = "pass_not_match"> كلمة المرور غير متطابقة </string>
+    <string name = "new_acc_act_lbl"> تسجيل حساب جديد </string>
+    <string name = "my_acc_act_lbl"> حسابي </string>
+    <string name = "edit_process"> تحرير الحساب ... </string>
+    <string name = "pass_instructure"> يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل ، أحدها على الأقل حرف كبير واحد و \ n رقم واحد على الأقل ، \ n ورمز واحد على الأقل. </string>
+    <string name = "invalid_email"> عنوان بريد إلكتروني خاطئ </string>
+    <string name = "netword_err"> خطأ في الشبكة ... </string>
+    <string name = "network_err_msg"> خطأ في الاتصال بالشبكة </string>
+    <string name = "acc_edit_msg_succ"> تم تعديل بيانات الحساب بنجاح </string>
+    <string name = "phone"> رقم الهاتف </string>
+    <string name = "username"> name </string>
+    <string name = "address"> العنوان </string>
+    <string name = "title_home"> الصفحة الرئيسية </string>
+    <string name = "my_account"> حسابي </string>
+    <string name = "logout"> تسجيل الخروج </string>
+    <string name = "save_btn"> حفظ </string>
+    <string name = "acad_id"> المعرف الأكاديمي </string>
+    <string name = "edit_profile"> تحرير ملف التعريف </string>
+    <string name="categories">الفئات</string>
+    <string name="my_cart">سلتي</string>
+    <string name="my_orders">طلباتي</string>
+    <string name = "success_add"> تمت إضافة العنصر إلى سلة التسوق بنجاح </string>
+    <string name="success_update">تم تعديل العنصر بنجاح</string>
+    <string name = "add_failure"> تعذر الإضافة إلى عربة التسوق </string>
+    <string name="update_failure">تعذر تحديث منتجات السلة</string>
+    <string name = "remove_success"> تمت إزالة العنصر من سلة التسوق بنجاح </string>
+    <string name = "item_add_sucess"> تم تحديث العنصر بنجاح </string>
+    <string name = "req_done_success"> تم طلبك بنجاح </string>
+    <string name = "ask_select_acc"> هل أنت متأكد من تحديد الدفع نقدًا عند التسليم؟ </string>
+    <string name = "info"> تنبيه: </string>
+    <string name="change_lang">تغيير اللغة</string>
+    <string name="services">خدمات</string>
+    <string name="products">منتجات</string>
+    <string name="edit_faild"> الرجاد التزكد من المعلومات المدخلة </string>
+    <string name="editـfail"> فشل </string>
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">shopping</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NU Shopping</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name = "login_lbl"> login </string>
+    <string name = "email_hint"> Email </string>
+    <string name = "pass_hint"> Password </string>
+    <string name = "login_btn"> Log in </string>
+
+    <string name = "register_act_lbl"> Register an account </string>
+
+    <string name = "new_user_lbl"> Register a new account </string>
+    <string name = "new_user_acc_lbl"> New user? </string>
+    <string name = "create_account"> Create a new account </string>
+    <string name = "name_hint"> Username </string>
+    <string name = "password_hint"> Password </string>
+    <string name = "re_password_hint"> Confirm password </string>
+    <string name = "reg_submit"> Sign Up </string>
+    <string name = "msg_failed"> There is a problem connecting to the network </string>
+    <string name = "username_pass_empty"> Username and password must be entered </string>
+    <string name = "login_failed"> Login failed ... </string>
+    <string name = "login_act_lbl"> Login </string>
+    <string name = "register_success"> Your account has been registered  </string>
+    <string name = "register_process"> Registration process ... </string>
+    <string name = "username_pass_wrong"> The password or username is wrong </string>
+    <string name = "pass_not_match"> Password does not match </string>
+    <string name = "new_acc_act_lbl"> Register a new account </string>
+    <string name = "my_acc_act_lbl"> My Account </string>
+    <string name = "edit_process"> Edit account ... </string>
+    <string name = "pass_instructure"> The password must contain at least 6 characters, one of which is at least one capital letter and \ n at least one number, \ n and at least one symbol. </string>
+    <string name = "invalid_email"> Wrong email address </string>
+    <string name = "netword_err"> Network error ... </string>
+    <string name = "network_err_msg"> Network connection error </string>
+    <string name = "acc_edit_msg_succ"> Account data has been modified successfully </string>
+    <string name = "phone"> phone number </string>
+    <string name = "username"> name </string>
+    <string name = "address"> Address </string>
+    <string name = "title_home"> Home </string>
+    <string name = "my_account"> My Account </string>
+    <string name = "logout"> Logout </string>
+    <string name = "save_btn"> Save </string>
+    <string name="acad_id">Academic ID</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="categories">Categories</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="success_add">Item added to the cart successfully</string>
+    <string name="success_update">Item added updated successfully</string>
+    <string name="add_failure">Could not add to cart</string>
+    <string name="update_failure">Could not update the item</string>
+    <string name="remove_success">Item removed from cart successfully</string>
+    <string name="item_add_sucess">Item updated successfully</string>
+    <string name="req_done_success">Your request done successfully</string>
+    <string name="ask_select_acc">Are you sure you select cash on delivery?</string>
+    <string name="info">Info:</string>
+    <string name="change_lang">Change Language</string>
+    <string name="services">Services</string>
+    <string name="products">Products</string>
+    <string name="edit_faild"> please check the entered information </string>
+    <string name="editـfail"> Failed </string>
+</resources>
