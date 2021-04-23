@@ -1,0 +1,197 @@
+<?php
+
+	session_start();
+	include("classes/DB.php");
+	if(!isset($_SESSION['admin']) || gettype($_SESSION['admin'])!="object")
+    {
+        $currentFile = $_SERVER["PHP_SELF"];
+        $parts = Explode('/', $currentFile);
+        if($parts[count($parts) - 1] != "login.php")
+        	header("location:login.php");
+    }
+
+	$dir = "";
+	$lang = isset($_SESSION["lang"])? $_SESSION["lang"] : "en";
+	if($lang == "en"){
+		$var1 = "Admin Account";
+		$var2 = "Logout";
+		$var3 = "Category";
+		$var4 = "Add Category";
+		$var5 = "Category List";
+		$var6 = "Items";
+		$var7 = "Add Item";
+		$var8 = "Item List";
+		$var9 = "List of Students";
+		$var10 = "Search for Student";
+		$var11 = "List of Orders";
+		$var12 = "Home";
+	}else{
+		$var1 = "حساب الأدمن";
+		$var2 = "تسجيل خروج";
+		$var3 = "الفئات";
+		$var4 = "اضافة فئة";
+		$var5 = "قائمة الفئات";
+		$var6 = "العناصر";
+		$var7 = "اضافة عنصر";
+		$var8 = "قائمة العناصر";
+		$var9 = "قائمة الطلاب";
+		$var10 = "بحث عن طالب";
+		$var11 = "قائمة الطلبات";
+		$var12 = "الرئيسية";
+
+		$dir = "direction: rtl;";
+	}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NU's Student shopping - Admin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+		<?php
+		if($dir != "")
+		{
+		?>
+
+		th {
+			text-align: right;
+		}
+		<?php
+
+
+		}
+		?>
+	</style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="index.php">
+					NU's Student shopping - administrator
+				</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-left">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="account.php?action=edit"><i class="fa fa-user fa-fw"></i> <?=$var1?></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i><?=$var2?></a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+						<li >
+                            <div style=" margin-left:auto; margin-right:auto">
+									<img  width="100%" src="images/logo.jpg"/>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+
+                        <li>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> <?=$var12?></a>
+                        </li>
+
+						<li>
+                            <a href="#"><i class="fa fa-building-o fa-fw"></i> <?=$var3?><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="category.php"><?=$var4?></a>
+                                </li>
+								<li>
+                                    <a href="categoryList.php"><?=$var5?></a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+						</li>
+
+						<li>
+                            <a href="#"><i class="fa fa-building-o fa-fw"></i> <?=$var6?><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="item.php"><?=$var7?></a>
+                                </li>
+								<li>
+                                    <a href="itemList.php"><?=$var8?></a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+						</li>
+
+                        <li>
+                            <a href="studentList.php"><i class="fa fa-building-o fa-fw"></i> <?=$var9?></a>
+                        </li>
+
+
+                        <li>
+                            <a href="searchStudent.php"><i class="fa fa-building-o fa-fw"></i> <?=$var10?></a>
+                        </li>
+
+                        <li>
+                            <a href="ordersList.php"><i class="fa fa-building-o fa-fw"></i> <?=$var11?></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
