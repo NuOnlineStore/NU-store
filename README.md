@@ -6,7 +6,7 @@ to try Student Application:
 3- put the (nu_shopping.zip) file in (htdocs) file 
 4- open the (shopping-2) in the android studio
 5- open URLS class 
-6- in the 7, put your IP address and make sure the path to (nu_shopping) is correct
+6- in the line 7, put your IP address and make sure the path to (nu_shopping) is correct
 7- open the phpMyAdmin and import our database from the (nu_shopping) it is named with (projects2021_shopping.sql)
 8- now you can run the project from android studio
 NOTE: if you want to use (reset your password) feature:  
