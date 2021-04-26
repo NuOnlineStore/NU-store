@@ -3,7 +3,7 @@ to run our project, please follow the following steps:
 to try Student Application:
 1- download the (nu_shopping.zip) file
 2- download the (shopping-2.zip) file
-3- put the (nu_shopping.zip) file in (htdocs) file 
+3- put the (nu_shopping.zip) file in (htdocs) folder 
 4- open the (shopping-2) in the android studio
 5- open URLS class 
 6- in the line 7, put your IP address and make sure the path to (nu_shopping) is correct
